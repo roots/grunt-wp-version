@@ -1,0 +1,39 @@
+{
+  "name": "grunt-wp-version",
+  "version": "0.1.0",
+  "description": "Set the versions for enqueued CSS/JS in WordPress",
+  "keywords": [
+    "gruntplugin",
+    "wordpress"
+  ],
+  "homepage": "https://github.com/roots/grunt-wp-version",
+  "bugs": "https://github.com/roots/grunt-wp-version/issues",
+  "author": {
+    "name": "Ben Word",
+    "email": "ben@benword.com",
+    "url": "http://roots.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/roots/grunt-wp-version.git"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jshint": "~0.6.3"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": {
+    "type": "MIT"
+  },
+  "files": [
+    "tasks/version.js"
+  ]
+}
