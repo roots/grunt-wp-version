@@ -1,0 +1,1 @@
+This project has been discontinued. Please see [grunt-wp-assets](https://github.com/roots/grunt-wp-assets).
