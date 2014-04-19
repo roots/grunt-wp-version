@@ -23,8 +23,8 @@ module.exports = function(grunt) {
     var hashJs = md5(options.js);
 
     // Update scripts.php to reference the new versions
-    var regexCss = new RegExp("(wp_enqueue_style\\('" + options.cssHandle + "',(\\s*[^,]+,){2})\\s*[^\\)]+\\);");
-    var regexJs = new RegExp("(wp_register_script\\('" + options.jsHandle + "',(\\s*[^,]+,){2})\\s*[^,]+,\\s*([^\\)]+)\\);");
+    var regexCss = new RegExp("(wp_enqueue_style\\(\\s?'" + options.cssHandle + "',(\\s*[^,]+,){2})\\s*[^\\)]+\\s?\\);");
+    var regexJs = new RegExp("(wp_register_script\\(\\s?'" + options.jsHandle + "',(\\s*[^,]+,){2})\\s*[^,]+,\\s*([^\\)]+)\\s?\\);");
 
     var content = grunt.file.read(scriptsPhp);
     content = content.replace(regexCss, "$1 '" + hashCss + "');");
